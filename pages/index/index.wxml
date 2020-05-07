@@ -1,0 +1,24 @@
+<!-- 幻灯片 -->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+  <view wx:for="{{[newsList[0],newsList[1],newsList[2]]}}" wx:key="swiper{{index}}">
+    <swiper-item>
+      <image src="{{item.poster}}"></image>
+    </swiper-item>
+  </view>
+</swiper>
+
+
+<!-- 新闻列表 -->
+<view class="news-list">
+  <view class="news-item" wx:for="{{newsList}}" wx:key="{{item.id}}" >
+    <image src="{{item.poster}}" ></image>
+    <text bindtap = 'goToDetail' data-id="{{item.id}}">{{item.title}}\n {{item.add_date}} \n </text>
+    
+  </view>
+
+
+ <button plain="true" loading='{{loading}}' bindtap='loadMoreContent'>{{loadMoreText}}</button>
+
+ 
+
+</view>

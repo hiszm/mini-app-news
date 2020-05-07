@@ -1,0 +1,20 @@
+/* 新闻列表 */
+.news-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.news-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid black;
+}
+.news-item image{
+  height: 150rpx;
+  width: 230rpx;
+  margin: 10rpx;
+}
+.news-item text{
+  width:100%;
+  line-height: 60rpx;
+  font-size:40rpx;
+}

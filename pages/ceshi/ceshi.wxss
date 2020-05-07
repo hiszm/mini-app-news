@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.a{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: red;
+}
+.b{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: greenyellow;
+}
+.c{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: yellow;
+}
